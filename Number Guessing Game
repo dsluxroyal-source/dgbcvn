@@ -1,0 +1,10 @@
+import random
+print("Welcome to the Guessing Game!")
+name = input("Enter your name: ")
+guess = int(input("Guess the number (1-10): "))
+print("Name:", name)
+secret_number = random.randint(1, 10)
+if guess == secret_number:
+    print("Correct! You guessed it")
+else:
+    print("Wrong! The correct number was", secret_number)
